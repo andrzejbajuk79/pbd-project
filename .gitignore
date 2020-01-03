@@ -1,0 +1,7 @@
+# dependencies
+pbd-back/node_modules
+pbd-front/node_modules
+
+# production
+pbd-back/build
+pbd-front/build
