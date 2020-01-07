@@ -11,4 +11,6 @@ npm start
 cd ../pbd-front
 npm install
 npm start
+
+URL: http://localhost:3000/
 ```

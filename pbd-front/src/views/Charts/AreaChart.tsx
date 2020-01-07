@@ -30,7 +30,7 @@ const AreaChart: React.SFC<AreaChartProps> = ({ data }) => {
       <Legend />
       <Area
         type="monotone"
-        dataKey="value"
+        dataKey="TANK1_WYSOKOSC"
         stroke="#829Cd0"
         fillOpacity={1}
         fill="url(#colorValue)"

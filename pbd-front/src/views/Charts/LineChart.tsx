@@ -8,13 +8,13 @@ import {
   Tooltip,
   Legend
 } from "recharts";
-import { HistorianDataType } from "../../templates/App";
+import { HistorianData2Type } from "../../templates/App";
 
 export interface LineChartProps {
-  data: HistorianDataType[];
+  data: HistorianData2Type[];
 }
 
-const LineChart: React.SFC<LineChartProps> = ({ data }) => {
+const LineChartCalculated: React.SFC<LineChartProps> = ({ data }) => {
   return (
     <Chart width={1500} height={600} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
@@ -22,9 +22,11 @@ const LineChart: React.SFC<LineChartProps> = ({ data }) => {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Line type="monotone" dataKey="value" stroke="#829Cd0" />
+      <Line type="monotone" dataKey="TANK1_WYSOKOSC" stroke="red" />
+      <Line type="monotone" dataKey="TANKR_WYSOKOSC" stroke="blue" />
+      <Line type="monotone" dataKey="SIM_VAR" stroke="green" />
     </Chart>
   );
 };
 
-export default LineChart;
+export default LineChartCalculated;
